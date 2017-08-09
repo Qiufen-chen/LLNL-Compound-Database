@@ -12,7 +12,7 @@ File Description
 + **pdb_entry_type.txt**: txt file, contains information of PDB ID, Target Type and Method.
 + **downloadPDB_biopdb.py**: download the whole PDB bank from the lastest release.
 + **create_PDBdatabase.py**: create PDB subdatabase and generate tables.
-+ **load_pdb_content.py**: read, extract adn load data from pdb_entry_type.txt to mysql.
++ **load_pdb_content.py**: read, extract and load data from pdb_entry_type.txt to mysql.
 
 RUNNING
 ------
