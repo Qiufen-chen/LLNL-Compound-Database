@@ -27,7 +27,7 @@ To completely and correctly build SIDER subdatabase, following steps are needed:
 + Create SIDER subdatabase and tables using **create_SIDERdatabase.py**.
 + Read data and load data into mysql using **fetch_SIDER_content.py**. 
 + Read and load UMLS_concept_id into mysql using **grep_UMLS_concept_id.py**.
-+ Running **fetch_ATCC_se.py** and **fetch_ATCC_ind.py** to grep ATC codes from wensite pages and load them into tables.
++ Run **fetch_ATCC_se.py** and **fetch_ATCC_ind.py** to grep ATC codes from wensite pages and load them into tables.
 + Create stored procedures via **split_XXX.sql** files on  MySQL clipboard.
 + Run the following commands on MYSQL clipboard:
 ```
