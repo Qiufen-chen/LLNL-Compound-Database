@@ -17,6 +17,7 @@ File Description
 RUNNING
 ------
 To completely and correctly build PDB subdatabase, following steps are needed:
+
 + Run **downloadPDB_biopdb.py** to download the whole PDB bank on the local repository.
 + Create PDB subdatabase and tables using **create_PDBdatabase.py**.
 + Read data and load data into mysql using **load_pdb_content.py**. 
