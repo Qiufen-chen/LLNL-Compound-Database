@@ -29,5 +29,13 @@ To completely and correctly build SIDER subdatabase, following steps are needed:
 + Read and load UMLS_concept_id into mysql using **grep_UMLS_concept_id.py**.
 + Running **fetch_ATCC_se.py** and **fetch_ATCC_ind.py** to grep ATC codes from wensite pages and load them into tables.
 + Create stored procedures via **split_XXX.sql** files on  MySQL clipboard.
-+ Run *call split_se* and *call split_indications* on MYSQL clipboard.
-+ Delete table **drug_with_side_effect** and **drug_with_indications** by using command *delete table drug_with_indications/drug_with_side_effect* on MYSQL clipboard.  
++ Run the following commands on MYSQL clipboard:
+```
+call split_se;
+call split_indications;
+```
++ Delete table **drug_with_side_effect** and **drug_with_indications** by using commands on MYSQL clipboard:
+```
+delete table drug_with_indications;
+drug_with_side_effect;
+```   
