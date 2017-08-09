@@ -8,18 +8,17 @@ USAGE NOTE
 
 File Description
 -----
-- **compound**: downloaded from [here](http://www.kegg.jp/kegg/download/)
+- **compound**: main table, txt file, downloaded from [here](http://www.kegg.jp/kegg/download/)
 - **fetch_title.py**: search and return all tags in main table txt file.
 - **load_KEGG.Compound.py**: create KEGG.Compound table and generate sub-tables.(connection may need change.)
 - **fetch_compound_content.py**: read, extract, and load data from main txt file.(connection may need change.)
 - **split_XXX.sql**: contains SQL code for subtable creation, after execution in MySQL, they were saved as stored procedures. 
-- call_compound.sql: For the execution of all stored procedures created by split_XXX.sql 
 
 Running
 -----
 To completely and correctly build relational KEGG Compound database, following steps are needed:
 
-- Run **fetch_title.py** and get all column names of main table.
+- Run **fetch_title.py** and get all column names of main table by running following command in terminal:
 ```python
 	python fetch_title.py
 ```
