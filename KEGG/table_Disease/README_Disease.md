@@ -8,11 +8,11 @@ USAGE NOTE
 
 File Description
 -----
-**disease**: main table, txt file, downloaded from [here](http://www.kegg.jp/kegg/download/)
-**fetch_title.py**: search and return all tags in main table txt file.
-**load_KEGG.Disease**: Create KEGG.Disease table and generate sub-tables.(connection may need change.)
-**fetch_disease_content.py**: read, extract, and load data from main txt file.(‘connection’ may need change.)
-**split_XXX.sql**: contains SQL code for subtable creation, after execution in MySQL, they were saved as stored procedures. 
+- **disease**: main table, txt file, downloaded from [here](http://www.kegg.jp/kegg/download/)
+- **fetch_title.py**: search and return all tags in main table txt file.
+- **load_KEGG.Disease**: Create KEGG.Disease table and generate sub-tables.(connection may need change.)
+- **fetch_disease_content.py**: read, extract, and load data from main txt file.(‘connection’ may need change.)
+- **split_XXX.sql**: contains SQL code for subtable creation, after execution in MySQL, they were saved as stored procedures. 
 
 Running
 -----
@@ -36,4 +36,4 @@ To completely and correctly build relational KEGG Disease database, following st
 	call split_Disease_drug();
 	call split_Disease_drug_group;
 ```
-- Delete the columns which generate subtables in the main table Disease(by GUI).
+- Delete the columns which generate subtables in the main table Disease(by MYSQL GUI).
