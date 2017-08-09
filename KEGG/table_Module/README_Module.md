@@ -10,7 +10,7 @@ File Description
 -----
 - **module**: main table, txt file, downloaded from [here](http://www.kegg.jp/kegg/download/)
 - **fetch_title.py**: search and return all tags in main table txt file.
-- **load_KEGG_Module**: create KEGG.Module table and generate sub-tables.(connection may need change.)
+- **load_KEGG_Module.py**: create KEGG.Module table and generate sub-tables.(connection may need change.)
 - **fetch_module_content.py**: read, extract, and load data from main txt file.(connection may need change.)
 - **split_XXX.sql**: Contains SQL code for subtable creation, after execution in MySQL, they were saved as stored procedures. 
 
