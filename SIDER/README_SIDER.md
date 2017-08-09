@@ -31,11 +31,11 @@ To completely and correctly build SIDER subdatabase, following steps are needed:
 + Create stored procedures via **split_XXX.sql** files on  MySQL clipboard.
 + Run the following commands on MYSQL clipboard:
 ```
-call split_se;
-call split_indications;
+	call split_se;
+	call split_indications;
 ```
 + Delete table **drug_with_side_effect** and **drug_with_indications** by using commands on MYSQL clipboard:
 ```
-delete table drug_with_indications;
-drug_with_side_effect;
+	delete table drug_with_indications;
+	delete table drug_with_side_effect;
 ```   
