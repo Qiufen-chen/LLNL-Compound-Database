@@ -13,7 +13,7 @@ File Description
 - **fetch_title.py**: search and return all tags in main table txt file.
 - **load_KEGG.Genome.py**: create KEGG.Genome table and generate sub-tables.(connection may need change.)
 - **fetch_genome_content.py**: read, extract, and load data from main txt file.(connection may need change.)
-- **fetch_ggenome_lists.py**: read, extract, and load data from id mapping lists txt file.(connection may need change.)
+- **fetch_genome_lists.py**: read, extract, and load data from id mapping lists txt file.(connection may need change.)
 - **split_XXX.sql**: contains SQL code for subtable creation, after execution in MySQL, they were saved as stored procedures. 
 
 Running
