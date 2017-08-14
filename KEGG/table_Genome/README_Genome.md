@@ -36,6 +36,6 @@ To completely and correctly build relational KEGG Genome database, following ste
 - Create procedure via **split_disease.sql** files on MySQL clipboard.
 - Split via stored procedures using using following commands on MySQL clipboard:
 ```
-	call split_Genome_Disease();
+	call split_Genome_disease();
 ```	
 - Delete the column(Disease) which generate subtables in the main table Genome(by MYSQL GUI).

@@ -95,7 +95,7 @@ with open('/Users/yingdong/Downloads/genome/genome_disease.list') as fh_disease:
         col2 = (line.split()[1]).split(':')[1]
         g += 1
         # combind the disease data from 'genome_disease.list' with 'genome' into the same table.
-        sql = """insert ignore into KEGG.Genome_Disease (Genome,Disease) 
+        sql = """insert ignore into KEGG.Genome_Disease (Entry,Disease) 
                  values
                  (%s, %s)
         """
