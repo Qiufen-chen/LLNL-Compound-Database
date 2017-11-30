@@ -1,0 +1,11 @@
+python run_benchmarks-new.py -m RF -s random -d Solubility_nM-small.csv
+
+
+output:
+
+Fitting model for task exp
+computed_metrics: [0.95684150204963536]
+computed_metrics: [0.77269898277257199]
+('RF', 'random', 'Solubility_nM-small.csv', 0.95684150204963536, 0.77269898277257199)
+
+only RF could get the output of plot in this version.
